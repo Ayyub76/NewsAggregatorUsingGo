@@ -7,10 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"sync"
 )
-
-var wg sync.WaitGroup
 
 type SiteMapIndex struct {
 	Locations []string `xml:"sitemap>loc"`
