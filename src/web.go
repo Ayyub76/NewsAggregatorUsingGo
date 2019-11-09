@@ -77,7 +77,7 @@ func news_agg_handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	page := NewsAggPage{Title: "Sample title", News: News_map}
-	t, err := template.ParseFiles("sampletemplate.html")
+	t, err := template.ParseFiles("NewsAggTemplate.html")
 	if err != nil {
 		fmt.Println(err)
 	}
